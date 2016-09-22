@@ -9,8 +9,12 @@
 <template name="collection">
   <ul>
     {{#each collection}}
-      <li>{{value}}</li>
+      {{> item}}
     {{/each}}
   </ul>
   <button>Add 5</button>
+</template>
+
+<template name="item">
+  <li>{{something value}}</li>
 </template>
