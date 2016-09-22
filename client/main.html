@@ -1,0 +1,16 @@
+<head>
+  <title>test-blaze-array</title>
+</head>
+
+<body>
+  {{> collection}}
+</body>
+
+<template name="collection">
+  <ul>
+    {{#each collection}}
+      <li>{{value}}</li>
+    {{/each}}
+  </ul>
+  <button>Add 5</button>
+</template>
