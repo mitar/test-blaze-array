@@ -14,7 +14,7 @@ for (let i = 0; i < 10; i++) {
 
 Template.collection.helpers({
   collection() {
-    return Collection.find({}, {sort: {'value.a': 1}, fields: {value: 1, test: 1}});
+    return Collection.find({}, {sort: {'value.a': 1}, fields: {'value.a': 1, test: 1}});
   },
 });
 
